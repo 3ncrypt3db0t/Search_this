@@ -23,6 +23,9 @@
 
                 <div class="searchBarContainer">
                     <input type="text" class="searchBox" name="term">
+                    <button>
+                        Search
+                    </button>
                 </div>
             </form>
         </div>
