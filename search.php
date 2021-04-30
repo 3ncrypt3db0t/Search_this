@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Search This | Minimal Search Engine</title>
+	<title>SearchThis | Minimal SE</title>
+
     <link rel="icon" href="assets/images/icons/search.png">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
-<div class="wrapper">
-    <div class="header">
-        <div class="headerContent">
-            <div class="logoContainer">
-                <a href="index.php">
-                    <img src="assets/images/SearchThisLogo.png">
-                </a>
-            </div>
 
-        <div class="searchContainer">
-            <form action="search.php" method="GET">
+	<div class="wrapper">
+	
+		<div class="header">
 
-                <div class="searchBarContainer">
-                    <input type="text" class="searchBox" name="term">
-                    <button>
-                        Search
-                    </button>
-                </div>
-            </form>
-        </div>
 
-        </div>
-    </div>
-</div>
+			<div class="headerContent">
+
+				<div class="logoContainer">
+					<a href="index.php">
+						<img src="assets/images/SearchThisLogo.png">
+					</a>
+				</div>
+
+				<div class="searchContainer">
+
+					<form action="search.php" method="GET">
+
+						<div class="searchBarContainer">
+
+							<input class="searchBox" type="text" name="term">
+							<button>
+								Search
+							</button>
+						</div>
+
+
+
+
+					</form>
+
+
+				</div>
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+	</div>
+
 </body>
 </html>
