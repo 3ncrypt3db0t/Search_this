@@ -12,11 +12,21 @@
 <div class="wrapper">
     <div class="header">
         <div class="headerContent">
-        <div class="logoContainer">
-            <a href="index.php">
-                <img src="assets/images/SearchThisLogo.png">
-            </a>
+            <div class="logoContainer">
+                <a href="index.php">
+                    <img src="assets/images/SearchThisLogo.png">
+                </a>
+            </div>
+
+        <div class="searchContainer">
+            <form action="search.php" method="GET">
+
+                <div class="searchBarContainer">
+                    <input type="text" class="searchBox" name="term">
+                </div>
+            </form>
         </div>
+
         </div>
     </div>
 </div>
