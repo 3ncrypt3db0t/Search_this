@@ -154,6 +154,6 @@ http://localhost:8080/Search_this
 * No storage of logs 
 
 # LICENSE ⤵️
->You can check out the full license [here](https://github.com/3ncrypt3db0t/Search_this/blob/main/LICENSE)
+>You can check out the full license [here](https://github.com/3ncrypt3db0t/Search_This/blob/main/LICENSE)
 
 This project is licensed under the terms of the **GNU/GPL** license. 😄
