@@ -30,6 +30,7 @@ int max(int assets1, assets2, assets3, assets4) {
    int result;
  
    printf("Assets Content Satisfied");
+   printf("Happy Coding");
  
    return result; 
 }
