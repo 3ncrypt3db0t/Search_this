@@ -3,7 +3,7 @@
 <head>
 	<title>SearchThis | Minimal SE</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="icon" href="assets/images/icons/search.png">
 
 </head>
@@ -12,7 +12,6 @@
 	<div class="wrapper">
 	
 		<div class="header">
-
 
 			<div class="headerContent">
 
@@ -28,7 +27,8 @@
 
 						<div class="searchBarContainer">
 
-							<input class="searchBox" type="text" name="term">
+							<input class="searchBox" type="text" 
+							name="term">
 							<button>
 								Search
 							</button>
