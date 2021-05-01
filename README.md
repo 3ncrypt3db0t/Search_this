@@ -37,6 +37,8 @@ Tools I've used within this project:
 ![VSCodium](https://img.shields.io/badge/VSCodium-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 #### OS 💻
 ![Deb](https://img.shields.io/badge/Debian_(Buster)-00000F?style=for-the-badge&logo=debian&logoColor=deeppink)
+#### Preferred Browser 
+![Brave](https://img.shields.io/badge/Brave-E34F26?style=for-the-badge&logo=brave&logoColor=white)
 
 ### Project Setup 
 
