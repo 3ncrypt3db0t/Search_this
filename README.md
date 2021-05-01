@@ -3,7 +3,7 @@
 <h1 align="center"> 🔍 Search This: A simple search engine 🔎 </h1>
 
 ## ⚡ Key Features 
-* Image Search
+* Image Search 
 * Web Crawl 
 * Site Search
 * Pagination Search System
