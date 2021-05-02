@@ -7,9 +7,17 @@
 		exit("You must enter a search term");
 	}
 
+	if(isset($_GET["type"])) {
+		$term = $_GET["type"];
+	}
+	else {
+		$type = "sites";
+	}
 
-	
+	// $type = isset($_GET["type"]) ? $_GET["term"] : "sites";
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
