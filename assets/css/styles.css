@@ -58,7 +58,11 @@ body {
 	border: none;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     height: 44px;
-    border-radius: 2px;
+	border-radius: 25px;
+	background: url('../images/icons/voice-control.png') no-repeat,
+				url('../images/icons/search-left.png') no-repeat;
+	background-size: 23px;
+	background-position: right 15px center, left 15px center;
     outline: none;
     padding: 10px;
     box-sizing: border-box;
