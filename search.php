@@ -69,6 +69,12 @@
 						</a>
 					</li>
 
+					<li>
+						<a href='<?php echo "search.php?term=$term&type=videos"; ?>'>
+							Videos
+						</a>
+					</li>
+
 				</ul>
 
 
