@@ -158,4 +158,4 @@ http://localhost:8080/Search_this
 # LICENSE ⤵️
 >You can check out the full license [here](https://github.com/3ncrypt3db0t/Search_This/blob/main/LICENSE)
 
-This project is licensed under the terms of the **GNU/GPL** license, feel free to share among others.😄
+This project is licensed under the terms of the **GNU/GPL** license, feel free to share among others. 😄
