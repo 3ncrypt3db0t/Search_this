@@ -1,5 +1,8 @@
 <?php
-	term = $_GET["term"];
+
+	if(isset($_GET["term"])) {
+		term = $_GET["term"];
+	}
 ?>
 
 <!DOCTYPE html>
