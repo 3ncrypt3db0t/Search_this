@@ -43,9 +43,6 @@
 							</button>
 						</div>
 
-
-
-
 					</form>
 
 
@@ -55,13 +52,20 @@
 
 			</div>
 
-				<div class="classContainer">
+				<div class="tabsContainer">
 					<ul class="tabList">
 						<li>
-							<a href=''>
-
+							<a href='<?php echo "search.php?"term=$term&type=sites"; ?>'>
+								Sites
 							</a>
 						</li>
+
+						<li>
+							<a href='<?php echo "search.php?"term=$term&type=images"; ?>'>
+								Images
+							</a>
+						</li>
+
 					</ul>
 				</div>
 
