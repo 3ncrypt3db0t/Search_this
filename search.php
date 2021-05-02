@@ -1,5 +1,5 @@
 <?php
-
+	term = $_GET["term"];
 ?>
 
 <!DOCTYPE html>
