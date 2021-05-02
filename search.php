@@ -30,7 +30,7 @@
 							<input class="searchBox" type="text" 
 							name="term">
 							<button>
-								Search
+								<img src="assets/images/icons/glass.png" alt="search" width="24px">
 							</button>
 						</div>
 
