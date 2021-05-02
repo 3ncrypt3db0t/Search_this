@@ -7,24 +7,25 @@
 		exit("You must enter a search term");
 	}
 
-	if(isset($_GET["type"])) {
-		$term = $_GET["type"];
-	}
-	else {
-		$type = "sites";
-	}
+	// if(isset($_GET["type"])) {
+	// 	$term = $_GET["type"];
+	// }
+	// else {
+	// 	$type = "sites";
+	// }
 
-	// $type = isset($_GET["type"]) ? $_GET["term"] : "sites";
+	$type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 
+
+	
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>SearchThis | Minimal SE</title>
+	<link rel="icon" href="assets/images/icons/search.png">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<link rel="icon" href="assets/images/icons/search.png">
 
 </head>
 <body>
