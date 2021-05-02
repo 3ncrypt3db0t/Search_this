@@ -26,7 +26,6 @@
 					<input class="searchBox" type="text" name="term">
 					<input class="searchButton" type="submit" value="Search">
 
-
 				</form>
 
 			</div>
