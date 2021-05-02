@@ -7,6 +7,7 @@
 * Web Crawl 
 * Site Search
 * Pagination Search System
+* Video Search
 
 ## 📝 Table of contents 
 * [General info](#general-info)
