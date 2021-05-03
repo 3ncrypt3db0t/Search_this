@@ -1,9 +1,9 @@
 <?php
 
-function followLinks() {
-    echo $url;
+function followLinks($url) {
+    
 }
 
-$startURL = "https://www.3ncrypt3db0t.github.io";
+$startURL = "https://3ncrypt3db0t.github.io/";
 followLinks($startURL);
 ?>
