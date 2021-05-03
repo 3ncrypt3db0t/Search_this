@@ -6,8 +6,9 @@ function followLinks($url) {
 
     $linkList = $parser->getLinks();
 
-    foreach($linkList == $link) {
+    foreach($linkList as $link) {
         $href = $link->getAttribute("href");
+        echo $href . "<br>";
     }
 }
 
