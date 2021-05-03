@@ -1,6 +1,11 @@
 <?php
 include("classes/DomDocumentParser.php");
 
+function createLink($src, $url) {
+    echo "SRC: $src<br>";
+    echo "URL: $url<br>";
+}
+
 function followLinks($url) {
     $parser = new DomDocumentParser($url);
 
@@ -12,10 +17,16 @@ function followLinks($url) {
         if(strpos($href, "#") !== false) {
             continue;
         } 
-        echo $href . "<br>";
+        else if(substr($href, 0, 11) == "javascript:") {
+            continue;
+        } 
+
+        createLink($href, $url);
+
+        //echo $href . "<br>";
     }
 }
 
-$startURL = "https://3ncrypt3db0t.github.io/";
+$startURL = "https://bbc.com";
 followLinks($startURL);
 ?>
