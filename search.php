@@ -7,13 +7,6 @@
 		exit("You must enter a search term");
 	}
 
-	// if(isset($_GET["type"])) {
-	// 	$term = $_GET["type"];
-	// }
-	// else {
-	// 	$type = "sites";
-	// }
-
 	$type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 
 
@@ -80,7 +73,7 @@
 
 					<li class="<?php echo $type == 'videos' ? 'active' : '' ?>">
 						<a href='<?php echo "search.php?term=$term&type=videos"; ?>'>
-							Videos
+							Images
 						</a>
 					</li>
 
