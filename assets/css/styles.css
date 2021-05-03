@@ -10,11 +10,9 @@ body {
 }
 
 .wrapper {
-
 	display: flex;
-    flex-direction: column;
-    min-height: 100%;
-	
+    	flex-direction: column;
+    	min-height: 100%;
 }
 
 .wrapper.indexPage {
@@ -39,36 +37,34 @@ body {
 }
 
 .searchContainer .searchButton {
-
 	color: #757575;
-    background-color: #f5f5f5;
-    border: none;
-    height: 36px;
-    width: 125px;
-    border-radius: 1px;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
-    outline: none;
-
+    	background-color: #f5f5f5;
+    	border: none;
+    	height: 36px;
+    	width: 125px;
+    	border-radius: 1px;
+    	font-size: 13px;
+    	font-weight: bold;
+    	margin-top: 20px;
+    	cursor: pointer;
+    	outline: none;
 }
 
 .mainSection .searchContainer .searchBox {
 	border: none;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-	height: 44px;
-	border-radius: 25px;
+    	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    	height: 44px;
+    	border-radius: 25px;
 	background: url('../images/icons/search-left.png') no-repeat;
 	background-size: 23px;
 	background-position: right 15px center;
 	outline: none;
-	padding: 10px;
-	box-sizing: border-box;
-	font-size: 16px;
-	width: 70%;
-	max-width: 630px;
-	color: #000;
+    	padding: 10px;
+    	box-sizing: border-box;
+    	font-size: 16px;
+    	width: 70%;
+    	max-width: 630px;
+    	color: #000;
 }
 
 .mainSection .logoContainer {
@@ -129,6 +125,7 @@ body {
 	height: 44px;
 	margin-top: 0;
 	width: 44px;
+	padding: 10px;
 	padding-right: 20px;
 	display: flex;
 	justify-content: center;
