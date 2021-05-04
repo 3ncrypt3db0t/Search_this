@@ -37,6 +37,11 @@ function getDetails($url) {
     $title = $titleArray->item(0)->nodeValue;
     $title = str_replace("\n", "", $title);
 
+    if($title == "") {
+        return;
+    }
+    echo "URL: $url, Title: $title";
+
 }
 
 function followLinks($url) {
@@ -67,7 +72,6 @@ function followLinks($url) {
             // Insert href
         }
 
-        echo $href . "<br>";
     }
 
     array_shift($crawling);
