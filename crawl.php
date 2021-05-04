@@ -34,6 +34,10 @@ function getDetails($url) {
     
     $titleArray = $parser->getTitleTags();
 
+    if(sizeof($titleArray) == 0 || $titleArray->item(0) == NULL) {
+        return;
+    }
+
     $title = $titleArray->item(0)->nodeValue;
     $title = str_replace("\n", "", $title);
 
@@ -71,6 +75,7 @@ function followLinks($url) {
 
             getDetails($href);
         }
+        else return;
 
     }
 
