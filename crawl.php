@@ -1,6 +1,10 @@
 <?php
 include("classes/DomDocumentParser.php");
 
+$alreadyCrawled = array();
+$crawling = array();
+
+
 function createLink($src, $url) {
 
     $scheme = parse_url($url)["scheme"]; // Scheme = http || https
@@ -26,6 +30,10 @@ function createLink($src, $url) {
 }
 
 function followLinks($url) {
+
+    global $alreadyCrawled;
+    global $crawling;
+    
     $parser = new DomDocumentParser($url);
 
     $linkList = $parser->getLinks();
@@ -42,7 +50,20 @@ function followLinks($url) {
 
         $href = createLink($href, $url);
 
+        if(in_array($href, $alreadyCrawled)) {
+            $alreadyCrawled[] = $href;
+            $crawling[] = $href;
+
+            // Insert href
+        }
+
         echo $href . "<br>";
+    }
+
+    array_shift($crawling);
+
+    foreach($crawling as $site) {
+        followLinks($site);
     }
 }
 
