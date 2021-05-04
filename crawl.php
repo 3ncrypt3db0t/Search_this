@@ -35,6 +35,8 @@ function getDetails($url) {
     $titleArray = $parser->getTitleTags();
 
     $title = $titleArray->item(0)->nodeValue;
+    $title = str_replace("\n", "", $title);
+
 }
 
 function followLinks($url) {
