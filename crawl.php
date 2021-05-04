@@ -30,7 +30,7 @@ function createLink($src, $url) {
 }
 
 function getDetails($url) {
-
+    $parser = new DomDocumentParser($url);
 }
 
 function followLinks($url) {
