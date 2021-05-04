@@ -69,7 +69,7 @@ function followLinks($url) {
             $alreadyCrawled[] = $href;
             $crawling[] = $href;
 
-            // Insert href
+            getDetails($href);
         }
 
     }
