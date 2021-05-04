@@ -29,11 +29,15 @@ function createLink($src, $url) {
     return $src;
 }
 
+function getDetails($url) {
+
+}
+
 function followLinks($url) {
 
     global $alreadyCrawled;
     global $crawling;
-    
+
     $parser = new DomDocumentParser($url);
 
     $linkList = $parser->getLinks();
