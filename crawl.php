@@ -31,7 +31,10 @@ function createLink($src, $url) {
 
 function getDetails($url) {
     $parser = new DomDocumentParser($url);
-    $title = new DomDocumentParser();
+    
+    $titleArray = $parser->getTitleTags();
+
+    $title = $titleArray->item(0)->nodeValue;
 }
 
 function followLinks($url) {
