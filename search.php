@@ -77,13 +77,19 @@ include("config.php");
 						</a>
 					</li>
 
+					<li class="<?php echo $type == 'news' ? 'active' : '' ?>">
+						<a href='<?php echo "search.php?term=$term&type=news"; ?>'>
+							News
+						</a>
+					</li>
+
 					<li class="<?php echo $type == 'maps' ? 'active' : '' ?>">
 						<a href='<?php echo "search.php?term=$term&type=maps"; ?>'>
 							Maps
 						</a>
 					</li>
 
-					<li class="<?php echo $type == ',music' ? 'active' : '' ?>">
+					<li class="<?php echo $type == 'music' ? 'active' : '' ?>">
 						<a href='<?php echo "search.php?term=$term&type=music"; ?>'>
 							Music
 						</a>
