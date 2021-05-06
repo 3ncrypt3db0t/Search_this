@@ -13,14 +13,14 @@ function linkExists($url) {
 	$query->bindParam(":url", $url);
 	$query->execute();
 
-	return $query->rowCount();
+	return $query->rowCount() != 0;
 }
 
 function insertLink($url, $title, $description, $keywords) {
 	global $con;
 
 	$query = $con->prepare("INSERT INTO sites(url, title, description, keywords)
-							VALUES(:url, :title, :description, :keywords)");
+				VALUES(:url, :title, :description, :keywords)");
 
 	$query->bindParam(":url", $url);
 	$query->bindParam(":title", $title);
@@ -92,8 +92,15 @@ function getDetails($url) {
 	$keywords = str_replace("\n", "", $keywords);
 
 
-	insertLink($url, $title, $description, $keywords);
-
+	if(linkExists($url)) {
+		echo "This $url already exists";
+	} 
+	else if(insertLink($url, $title, $description, $keywords)) {
+		echo "SUCCESS : $url";
+	}
+	else {
+		
+	}
 }
 
 function followLinks($url) {
