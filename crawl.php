@@ -1,5 +1,6 @@
 <?php
 include("classes/DomDocumentParser.php");
+include("config.php");
 
 $alreadyCrawled = array();
 $crawling = array();
