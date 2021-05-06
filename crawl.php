@@ -44,6 +44,11 @@ function getDetails($url) {
 	if($title == "") {
 		return;
 	}
+
+	$description = "";
+	$keywords = "";
+
+
 	echo "URL: $url, Title: $title<br>";
 
 }
