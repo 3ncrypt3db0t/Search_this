@@ -42,7 +42,7 @@ function insertImage($url, $src, $alt, $title) {
 	$query->bindParam(":alt", $alt);
 	$query->bindParam(":title", $title);
 
-	return $query->execute();
+	$query->execute();
 }
 
 
