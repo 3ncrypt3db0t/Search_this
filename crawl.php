@@ -20,7 +20,7 @@ function insertLink($url, $title, $description, $keywords) {
 	global $con;
 
 	$query = $con->prepare("INSERT INTO sites(url, title, description, keywords)
-				VALUES(:url, :title, :description, :keywords)");
+							VALUES(:url, :title, :description, :keywords)");
 
 	$query->bindParam(":url", $url);
 	$query->bindParam(":title", $title);
@@ -96,10 +96,10 @@ function getDetails($url) {
 		echo "This $url already exists";
 	} 
 	else if(insertLink($url, $title, $description, $keywords)) {
-		echo "SUCCESS : $url";
+		echo "SUCCESS : This $url inserted successfully";
 	}
 	else {
-		
+		echo "ERROR: Failed to insert this $url";
 	}
 }
 
