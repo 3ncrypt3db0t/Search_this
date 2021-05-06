@@ -58,7 +58,8 @@ function getDetails($url) {
 			$keywords = $meta->getAttribute("content");
 		}
 	}
-
+	$description = str_replace("\n", "", $description);
+	$keywords = str_replace("\n", "", $keywords);
 
 	echo "URL: $url, Title: $title<br>";
 
