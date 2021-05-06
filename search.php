@@ -16,8 +16,7 @@ include("config.php");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SearchThis | Minimal SE</title>
-	<link rel="icon" href="assets/images/icons/search.png">
+	<title>Welcome to Doodle</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
@@ -74,7 +73,19 @@ include("config.php");
 
 					<li class="<?php echo $type == 'videos' ? 'active' : '' ?>">
 						<a href='<?php echo "search.php?term=$term&type=videos"; ?>'>
-							Images
+							Videos
+						</a>
+					</li>
+
+					<li class="<?php echo $type == 'maps' ? 'active' : '' ?>">
+						<a href='<?php echo "search.php?term=$term&type=maps"; ?>'>
+							Maps
+						</a>
+					</li>
+
+					<li class="<?php echo $type == ',music' ? 'active' : '' ?>">
+						<a href='<?php echo "search.php?term=$term&type=music"; ?>'>
+							Music
 						</a>
 					</li>
 
