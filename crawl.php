@@ -31,6 +31,21 @@ function insertLink($url, $title, $description, $keywords) {
 	return $query->execute();
 }
 
+function insertImage($url, $src, $alt, $title) {
+	global $con;
+
+	$query = $con->prepare("INSERT INTO images(siteURL, imageURL, alt, title)
+							VALUES(:siteURL, :imageURL, :alt, :title)");
+
+	$query->bindParam(":siteURL", $url);
+	$query->bindParam(":imageURL", $src);
+	$query->bindParam(":alt", $alt);
+	$query->bindParam(":title", $title);
+
+	return $query->execute();
+}
+
+
 function createLink($src, $url) {
 
 	$scheme = parse_url($url)["scheme"]; // SCHEME:  http
