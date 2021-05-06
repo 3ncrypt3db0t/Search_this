@@ -48,6 +48,8 @@ function getDetails($url) {
 	$description = "";
 	$keywords = "";
 
+	$metasArray = $parser->getMetatags();
+
 
 	echo "URL: $url, Title: $title<br>";
 
