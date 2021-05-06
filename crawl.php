@@ -5,6 +5,10 @@ include("classes/DomDocumentParser.php");
 $alreadyCrawled = array();
 $crawling = array();
 
+function insertLink($url, $title, $description, $keywords) {
+	
+}
+
 function createLink($src, $url) {
 
 	$scheme = parse_url($url)["scheme"]; // SCHEME: http || //https
