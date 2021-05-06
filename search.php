@@ -16,9 +16,10 @@ include("config.php");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Doodle</title>
+	<title>SearchThis |Minimal SE</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="icon" href="assets/images/icons/search.png">
 
 </head>
 <body>
