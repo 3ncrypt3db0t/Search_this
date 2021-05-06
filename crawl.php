@@ -5,11 +5,22 @@ include("classes/DomDocumentParser.php");
 $alreadyCrawled = array();
 $crawling = array();
 
+function linkExists($url) {
+	global $con;
+
+	$query = $con->prepare("SELECT * FROM sites WHERE url = :url");
+
+	$query->bindParam(":url", $url);
+	$query->execute();
+
+	return $query->rowCount();
+}
+
 function insertLink($url, $title, $description, $keywords) {
 	global $con;
 
 	$query = $con->prepare("INSERT INTO sites(url, title, description, keywords)
-				VALUES(:url, :title, :description, :keywords)");
+							VALUES(:url, :title, :description, :keywords)");
 
 	$query->bindParam(":url", $url);
 	$query->bindParam(":title", $title);
@@ -18,6 +29,7 @@ function insertLink($url, $title, $description, $keywords) {
 
 	return $query->execute();
 }
+
 
 function createLink($src, $url) {
 
