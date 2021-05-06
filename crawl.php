@@ -6,10 +6,10 @@ $alreadyCrawled = array();
 $crawling = array();
 
 function insertLink($url, $title, $description, $keywords) {
-	global $conn;
+	global $con;
 
-	$query = $conn->prepare("INSERT INTO sites(url, title, description, keywords)
-							VALUES(:url, :title, :description, :keywords)";
+	$query = $con->prepare("INSERT INTO sites(url, title, description, keywords)
+				VALUES(:url, :title, :description, :keywords)");
 
 	$query->bindParam(":url", $url);
 	$query->bindParam(":title", $title);
@@ -17,12 +17,11 @@ function insertLink($url, $title, $description, $keywords) {
 	$query->bindParam(":keywords", $keywords);
 
 	return $query->execute();
-	
 }
 
 function createLink($src, $url) {
 
-	$scheme = parse_url($url)["scheme"]; // SCHEME: http || //https
+	$scheme = parse_url($url)["scheme"]; // SCHEME:  http
 	$host = parse_url($url)["host"]; // HOST: www.bbc.com
 	
 	if(substr($src, 0, 2) == "//") {
@@ -67,15 +66,19 @@ function getDetails($url) {
 	$metasArray = $parser->getMetatags();
 
 	foreach($metasArray as $meta) {
+
 		if($meta->getAttribute("name") == "description") {
 			$description = $meta->getAttribute("content");
 		}
+
 		if($meta->getAttribute("name") == "keywords") {
 			$keywords = $meta->getAttribute("content");
 		}
 	}
+
 	$description = str_replace("\n", "", $description);
 	$keywords = str_replace("\n", "", $keywords);
+
 
 	insertLink($url, $title, $description, $keywords);
 
