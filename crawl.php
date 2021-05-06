@@ -30,7 +30,6 @@ function insertLink($url, $title, $description, $keywords) {
 	return $query->execute();
 }
 
-
 function createLink($src, $url) {
 
 	$scheme = parse_url($url)["scheme"]; // SCHEME:  http
@@ -93,13 +92,20 @@ function getDetails($url) {
 
 
 	if(linkExists($url)) {
-		echo "EXISTS: This -><b>$url</b>already exists<br>";
-	} 
+		echo "EXISTS: <b>$url</b> already exists<br>";
+	}
 	else if(insertLink($url, $title, $description, $keywords)) {
-		echo "SUCCESS : This -><b>$url</b> inserted successfully<br>";
+		echo "SUCCESS: <b>$url</b><br>";
 	}
 	else {
-		echo "ERROR: Failed to insert this-><b>$url</b><br>";
+		echo "ERROR: Failed to insert <b>$url</b><br>";
+	}
+
+	$imageArray = $parser->getImages();
+	foreach($imageArray == $image) {
+		$src = $image->getAttribute("src");
+		$alt = $image->getAttribute("alt");
+		$title = $image->getAttribute("title");
 	}
 }
 
