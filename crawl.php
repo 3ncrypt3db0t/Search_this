@@ -50,6 +50,12 @@ function getDetails($url) {
 
 	$metasArray = $parser->getMetatags();
 
+	foreach($metasArray as $meta) {
+		if($meta->getAttribute("name") == "description") {
+			
+		}
+	}
+
 
 	echo "URL: $url, Title: $title<br>";
 
