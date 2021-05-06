@@ -77,6 +77,8 @@ function getDetails($url) {
 	$description = str_replace("\n", "", $description);
 	$keywords = str_replace("\n", "", $keywords);
 
+	insertLink($url, $title, $description, $keywords);
+
 }
 
 function followLinks($url) {
