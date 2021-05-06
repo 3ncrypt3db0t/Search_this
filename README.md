@@ -128,10 +128,13 @@ Listen 8080
 # It is usually good practice to create a dedicated user and group for
 # running httpd, as with most system services.
 #
+# Old: user daemon
+# Old: group daemon
 User nobody
 Group nogroup
 </IfModule>
 ```
+>Editing the User and group access can result fault in phpmyadmin.
 
 #### Accessing files within local server 
 - set chmod to Search_this with this command
@@ -144,6 +147,7 @@ Open your browser and enter this url:
 
 http://localhost:8080/Search_this
 ```
+
 >Editing **httpd.conf** might not work as intended, edit the configuration files at your own risk. 
 
 ## 🖼️ Screenshots and Visual Overview 🎥
