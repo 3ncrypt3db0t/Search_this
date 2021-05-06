@@ -6,7 +6,9 @@ $alreadyCrawled = array();
 $crawling = array();
 
 function insertLink($url, $title, $description, $keywords) {
-	
+	global $conn;
+
+	$query = $conn->prepare("INSERT INTO sites(url, title, description, keywords)");
 }
 
 function createLink($src, $url) {
