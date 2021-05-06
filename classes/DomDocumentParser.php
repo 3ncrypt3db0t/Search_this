@@ -6,7 +6,7 @@ class DomDocumentParser {
 	public function __construct($url) {
 
 		$options = array(
-			'http'=>array('method'=>"GET", 'header'=>"User-Agent: searchThisBot/0.1\n")
+			'http'=>array('method'=>"GET", 'header'=>"User-Agent: searchBot/0.1\n")
 			);
 		$context = stream_context_create($options);
 
@@ -18,11 +18,11 @@ class DomDocumentParser {
 		return $this->doc->getElementsByTagName("a");
 	}
 
-	public function getTitletags() {
+	public function getTitleTags() {
 		return $this->doc->getElementsByTagName("title");
 	}
 
-	public function getMetatags() {
+	public function getMetaTags() {
 		return $this->doc->getElementsByTagName("meta");
 	}
 
