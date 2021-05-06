@@ -8,7 +8,8 @@ $crawling = array();
 function insertLink($url, $title, $description, $keywords) {
 	global $conn;
 
-	$query = $conn->prepare("INSERT INTO sites(url, title, description, keywords)");
+	$query = $conn->prepare("INSERT INTO sites(url, title, description, keywords)
+							VALUES(:url, :title, :description, :keywords)";
 }
 
 function createLink($src, $url) {
