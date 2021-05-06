@@ -93,13 +93,13 @@ function getDetails($url) {
 
 
 	if(linkExists($url)) {
-		echo "This $url already exists";
+		echo "EXISTS: This -><b>$url</b>already exists<br>";
 	} 
 	else if(insertLink($url, $title, $description, $keywords)) {
-		echo "SUCCESS : This $url inserted successfully";
+		echo "SUCCESS : This -><b>$url</b> inserted successfully<br>";
 	}
 	else {
-		echo "ERROR: Failed to insert this $url";
+		echo "ERROR: Failed to insert this-><b>$url</b><br>";
 	}
 }
 
