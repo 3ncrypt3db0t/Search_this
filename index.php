@@ -20,7 +20,8 @@
 		<div class="mainSection">
 
 			<div class="logoContainer">
-				<img src="assets/images/SearchThisLogo.png" title="Search Engine Logo">
+				<img src="assets/images/SearchThisLogo.png" 
+				title="Search Engine Logo" alt="Site Logo">
 			</div>
 
 
