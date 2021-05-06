@@ -15,6 +15,8 @@ function insertLink($url, $title, $description, $keywords) {
 	$query->bindParam(":title", $title);
 	$query->bindParam(":description", $description);
 	$query->bindParam(":keywords", $keywords);
+
+	return $query->execute();
 	
 }
 
