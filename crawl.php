@@ -34,21 +34,20 @@ function insertLink($url, $title, $description, $keywords) {
 function insertImage($url, $src, $alt, $title) {
 	global $con;
 
-	$query = $con->prepare("INSERT INTO images(siteURL, imageURL, alt, title)
-							VALUES(:siteURL, :imageURL, :alt, :title)");
+	$query = $con->prepare("INSERT INTO images(siteUrl, imageUrl, alt, title)
+							VALUES(:siteUrl, :imageUrl, :alt, :title)");
 
-	$query->bindParam(":siteURL", $url);
-	$query->bindParam(":imageURL", $src);
+	$query->bindParam(":siteUrl", $url);
+	$query->bindParam(":imageUrl", $src);
 	$query->bindParam(":alt", $alt);
 	$query->bindParam(":title", $title);
 
-	$query->execute();
+	return $query->execute();
 }
-
 
 function createLink($src, $url) {
 
-	$scheme = parse_url($url)["scheme"]; // SCHEME:  http
+	$scheme = parse_url($url)["scheme"]; // SCHEME: ;http
 	$host = parse_url($url)["host"]; // HOST: www.bbc.com
 	
 	if(substr($src, 0, 2) == "//") {
@@ -71,6 +70,8 @@ function createLink($src, $url) {
 }
 
 function getDetails($url) {
+
+	global $alreadyFoundImages;
 
 	$parser = new DomDocumentParser($url);
 
@@ -108,17 +109,17 @@ function getDetails($url) {
 
 
 	if(linkExists($url)) {
-		echo "EXISTS: <b>$url</b> already exists<br>";
+		echo "$url already exists<br>";
 	}
 	else if(insertLink($url, $title, $description, $keywords)) {
-		echo "SUCCESS: <b>$url</b><br>";
+		echo "SUCCESS: $url<br>";
 	}
 	else {
-		echo "ERROR: Failed to insert <b>$url</b><br>";
+		echo "ERROR: Failed to insert $url<br>";
 	}
 
 	$imageArray = $parser->getImages();
-	foreach($imageArray == $image) {
+	foreach($imageArray as $image) {
 		$src = $image->getAttribute("src");
 		$alt = $image->getAttribute("alt");
 		$title = $image->getAttribute("title");
@@ -132,9 +133,12 @@ function getDetails($url) {
 		if(!in_array($src, $alreadyFoundImages)) {
 			$alreadyFoundImages[] = $src;
 
-			insertImage($url, $src, $alt, $title);
+			echo "INSERT: " . insertImage($url, $src, $alt, $title);
 		}
+
 	}
+
+
 }
 
 function followLinks($url) {
@@ -166,8 +170,6 @@ function followLinks($url) {
 
 			getDetails($href);
 		}
-		else return;
-
 
 	}
 
