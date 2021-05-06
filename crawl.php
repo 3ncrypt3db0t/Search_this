@@ -10,6 +10,12 @@ function insertLink($url, $title, $description, $keywords) {
 
 	$query = $conn->prepare("INSERT INTO sites(url, title, description, keywords)
 							VALUES(:url, :title, :description, :keywords)";
+
+	$query->bindParam(":url", $url);
+	$query->bindParam(":title", $title);
+	$query->bindParam(":description", $description);
+	$query->bindParam(":keywords", $keywords);
+	
 }
 
 function createLink($src, $url) {
