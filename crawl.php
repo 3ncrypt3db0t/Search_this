@@ -52,7 +52,10 @@ function getDetails($url) {
 
 	foreach($metasArray as $meta) {
 		if($meta->getAttribute("name") == "description") {
-			
+			$description = $meta->getAttribute("content");
+		}
+		if($meta->getAttribute("name") == "keywords") {
+			$keywords = $meta->getAttribute("content");
 		}
 	}
 
