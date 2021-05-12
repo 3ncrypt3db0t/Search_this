@@ -8,7 +8,14 @@ class SiteResultsProvider {
     }
 
     public function getNumResults($term) {
-        $query = $this->con->prepare("")
+        $query = $this->con->prepare("SELECT COUNT(*) as total
+                                FROM sites WHERE title LIKE :term
+                                OR url LIKE :term
+                                OR keywords LIKE :term
+                                OR description LIKE :term");
+
+        
+
     }
 }
 ?>
