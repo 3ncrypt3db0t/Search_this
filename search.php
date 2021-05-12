@@ -100,10 +100,12 @@ include("config.php");
 
 
 			</div>
-
-
-
 		</div>
+
+		<div class="mainResultSection">
+			
+		</div>
+
 	</div>
 
 </body>
