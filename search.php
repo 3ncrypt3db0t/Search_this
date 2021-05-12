@@ -106,7 +106,7 @@ include("classes/SiteResultsProvider.php");
 		<div class="mainResultSection">
 			<?php
 			$resultsProvider = new SiteResultsProvider($con);
-			echo $resultsProvider->getNumResults($term);
+			$numResults = $resultsProvider->getNumResults($term);
 			?>
 		</div>
 
