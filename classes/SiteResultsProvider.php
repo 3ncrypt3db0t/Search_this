@@ -14,7 +14,8 @@ class SiteResultsProvider {
                                 OR keywords LIKE :term
                                 OR description LIKE :term");
 
-        
+        $searchTerm = "%". $term . "%";
+        $query->bindParam(":term", $searchTerm);
 
     }
 }
