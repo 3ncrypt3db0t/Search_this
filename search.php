@@ -1,5 +1,6 @@
 <?php
 include("config.php");
+include("classes/SiteResultsProvider.php");
 
 	if(isset($_GET["term"])) {
 		$term = $_GET["term"];
@@ -72,7 +73,7 @@ include("config.php");
 						</a>
 					</li>
 
-					<li class="<?php echo $type == 'videos' ? 'active' : '' ?>">
+					<!-- <li class="<?php echo $type == 'videos' ? 'active' : '' ?>">
 						<a href='<?php echo "search.php?term=$term&type=videos"; ?>'>
 							Videos
 						</a>
@@ -94,7 +95,7 @@ include("config.php");
 						<a href='<?php echo "search.php?term=$term&type=music"; ?>'>
 							Music
 						</a>
-					</li>
+					</li> -->
 
 				</ul>
 
@@ -103,7 +104,10 @@ include("config.php");
 		</div>
 
 		<div class="mainResultSection">
-			
+			<?php
+			$resultsProvider = new SiteResultsProvider($con);
+			echo $resultsProvider->getNumResults($term);
+			?>
 		</div>
 
 	</div>
