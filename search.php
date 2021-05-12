@@ -106,7 +106,10 @@ include("classes/SiteResultsProvider.php");
 		<div class="mainResultSection">
 			<?php
 			$resultsProvider = new SiteResultsProvider($con);
+
 			$numResults = $resultsProvider->getNumResults($term);
+
+			echo "<p class='resultsCount'>$numResults Results Found</p>";
 			?>
 		</div>
 
