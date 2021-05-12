@@ -7,7 +7,6 @@
 * Web Crawl 
 * Site Search
 * Pagination Search System
-* Video Search
 
 ## 📝 Table of contents 
 * [General info](#general-info)
@@ -158,6 +157,7 @@ http://localhost:8080/Search_this
 * Geo-location features 
 * Dedicated maps-tags and map re-querying 
 * Enhanced  privacy and security options 
+* Video, News, Music and Maps search feature
 * No storage of logs 
 
 # LICENSE ⤵️
