@@ -29,7 +29,7 @@ class SiteResultsProvider {
                                 OR url LIKE :term
                                 OR keywords LIKE :term
                                 OR description LIKE :term
-                                ORDER BY clicks");
+                                ORDER BY clicks DESC");
 
         $searchTerm = "%". $term . "%";
         $query->bindParam(":term", $searchTerm);
