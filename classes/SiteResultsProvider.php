@@ -28,7 +28,8 @@ class SiteResultsProvider {
                                 FROM sites WHERE title LIKE :term
                                 OR url LIKE :term
                                 OR keywords LIKE :term
-                                OR description LIKE :term");
+                                OR description LIKE :term
+                                ORDER BY clicks");
 
         $searchTerm = "%". $term . "%";
         $query->bindParam(":term", $searchTerm);
