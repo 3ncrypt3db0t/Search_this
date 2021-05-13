@@ -34,6 +34,10 @@ class SiteResultsProvider {
         $searchTerm = "%". $term . "%";
         $query->bindParam(":term", $searchTerm);
         $query->execute();
+
+        $resultsHtml = "<div class=siteResults>";
+
+        $resultsHtml .= "</div>"
     }
 }
 ?>
