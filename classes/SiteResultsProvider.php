@@ -35,7 +35,7 @@ class SiteResultsProvider {
         $query->bindParam(":term", $searchTerm);
         $query->execute();
 
-        $resultsHtml = "<div class=siteResults>";
+        $resultsHtml = "<div class='siteResults'>";
 
         while($row = $query->fetch(PDO::FETCH_ASSOC)) {
             $title = row["title"];
@@ -43,6 +43,8 @@ class SiteResultsProvider {
         }
 
         $resultsHtml .= "</div>"
+
+        return $resultsHtml;
     }
 }
 ?>
