@@ -20,7 +20,11 @@ class SiteResultsProvider {
 
         $row = $query->fetch(PDO::FETCH_ASSOC);
         return $row["total"];
-        
+
+    }
+
+    public function getResultsHtml($page, $pageSize, $term) {
+
     }
 }
 ?>
