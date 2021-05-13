@@ -2,14 +2,14 @@
 include("config.php");
 include("classes/SiteResultsProvider.php");
 
-	if(isset($_GET["term"])) {
-		$term = $_GET["term"];
-	}
-	else {
-		exit("You must enter a search term");
-	}
+if(isset($_GET["term"])) {
+	$term = $_GET["term"];
+}
+else {
+	exit("You must enter a search term");
+}
 
-	$type = isset($_GET["type"]) ? $_GET["type"] : "sites";
+$type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 
 
 	
@@ -17,7 +17,7 @@ include("classes/SiteResultsProvider.php");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SearchThis |Minimal SE</title>
+	<title>SearchThis | Minimal SE</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="icon" href="assets/images/icons/search.png">
@@ -73,47 +73,39 @@ include("classes/SiteResultsProvider.php");
 						</a>
 					</li>
 
-					<!-- <li class="<?php echo $type == 'videos' ? 'active' : '' ?>">
-						<a href='<?php echo "search.php?term=$term&type=videos"; ?>'>
-							Videos
-						</a>
-					</li>
-
-					<li class="<?php echo $type == 'news' ? 'active' : '' ?>">
-						<a href='<?php echo "search.php?term=$term&type=news"; ?>'>
-							News
-						</a>
-					</li>
-
-					<li class="<?php echo $type == 'maps' ? 'active' : '' ?>">
-						<a href='<?php echo "search.php?term=$term&type=maps"; ?>'>
-							Maps
-						</a>
-					</li>
-
-					<li class="<?php echo $type == 'music' ? 'active' : '' ?>">
-						<a href='<?php echo "search.php?term=$term&type=music"; ?>'>
-							Music
-						</a>
-					</li> -->
-
 				</ul>
 
 
 			</div>
 		</div>
 
-		<div class="mainResultSection">
+
+
+
+
+
+
+
+
+
+		<div class="mainResultsSection">
+
 			<?php
 			$resultsProvider = new SiteResultsProvider($con);
 
 			$numResults = $resultsProvider->getNumResults($term);
 
-			echo "<p class='resultsCount'>$numResults Results Found</p>";
+			echo "<p class='resultsCount'>$numResults results found</p>";
 
-			echo $resultsProvider->getResultsHtml(1,20, $term);
+
+
+			echo $resultsProvider->getResultsHtml(1, 20, $term);
 			?>
+
+
 		</div>
+
+
 
 	</div>
 
