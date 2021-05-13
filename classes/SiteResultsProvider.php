@@ -24,7 +24,15 @@ class SiteResultsProvider {
     }
 
     public function getResultsHtml($page, $pageSize, $term) {
+        $query = $this->con->prepare("SELECT COUNT(*) as total
+                                FROM sites WHERE title LIKE :term
+                                OR url LIKE :term
+                                OR keywords LIKE :term
+                                OR description LIKE :term");
 
+        $searchTerm = "%". $term . "%";
+        $query->bindParam(":term", $searchTerm);
+        $query->execute();
     }
 }
 ?>
