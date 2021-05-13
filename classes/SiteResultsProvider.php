@@ -39,6 +39,7 @@ class SiteResultsProvider {
 
         while($row = $query->fetch(PDO::FETCH_ASSOC)) {
             $title = row["title"];
+            $resultsHtml .= "$title <br>";
         }
 
         $resultsHtml .= "</div>"
