@@ -44,7 +44,7 @@ $type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 
 						<div class="searchBarContainer">
 
-							<input class="searchBox" type="text" name="term">
+							<input class="searchBox" type="text" name="term" value="<?php echo $term; ?>">
 							<button class="searchButton">
 								<img src="assets/images/icons/glass.png">
 							</button>
