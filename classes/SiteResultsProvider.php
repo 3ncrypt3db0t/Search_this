@@ -69,6 +69,11 @@ class SiteResultsProvider {
 	}
 
 
+	private function trimField($string, $characterLimit) {
+		$dots = strlen($string) > $characterLimit ? "..." : "";
+	}
+
+
 
 
 }
