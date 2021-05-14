@@ -48,7 +48,7 @@ class SiteResultsProvider {
 			$description = $row["description"];
 
 			$title = $this->trimField($title, 55);
-			$description = $this->trimField($description, 230);
+			$description = $this->trimField($description, 90);
 			
 			$resultsHtml .= "<div class='resultContainer'>
 
