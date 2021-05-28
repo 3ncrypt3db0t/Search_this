@@ -154,8 +154,14 @@ http://localhost:8080/Search_this
 ### Home Page 
 ![index](https://user-images.githubusercontent.com/48232101/120006275-77f0da80-bff8-11eb-864e-ca55a27079d3.png)
 
-### Search Page 
+### Site Search Page 
 ![search](https://user-images.githubusercontent.com/48232101/120006283-7aebcb00-bff8-11eb-93e8-31015ea3e9c2.png)
+
+### Image Search Page 
+* Will be updated soon 
+
+### Visual Overview 
+* Will be updated soon
 
 ## 🖋️ To Do 📝
 * Local autocomplete
