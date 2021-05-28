@@ -150,7 +150,12 @@ http://localhost:8080/Search_this
 >Editing **httpd.conf** might not work as intended, edit the configuration files at your own risk. 
 
 ## 🖼️ Screenshots and Visual Overview 🎥
-* Screenshots will be updated soon
+
+### Home Page 
+![index](https://user-images.githubusercontent.com/48232101/120006275-77f0da80-bff8-11eb-864e-ca55a27079d3.png)
+
+### Search Page 
+![search](https://user-images.githubusercontent.com/48232101/120006283-7aebcb00-bff8-11eb-93e8-31015ea3e9c2.png)
 
 ## 🖋️ To Do 📝
 * Local autocomplete
