@@ -164,10 +164,10 @@ http://localhost:8080/Search_this
 * Will be updated soon
 
 ## 🖋️ To Do 📝
-* Local autocomplete
+* Local autocomplete 
 * Geo-location features 
 * Dedicated maps-tags and map re-querying 
-* Enhanced  privacy and security options 
+* Enhanced  privacy and security options
 * Video, News, Music and Maps search feature
 * No storage of logs 
 
