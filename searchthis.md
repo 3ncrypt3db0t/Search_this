@@ -3,8 +3,8 @@
 $greetingMessage = "Welcome to Search_This";
 $projectYear = 2021;
 
-class FileContents {
-    function FileContents() {
+class PageContents {
+    function PageContents() {
         $this->index = "index.php"; 
         $this->search = "search.php";
         $this->connection = "config.php";
