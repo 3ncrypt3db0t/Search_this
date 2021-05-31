@@ -19,10 +19,16 @@ class ClassContents {
     }
 }
 
+class AssetsContents {
+    function AssetsContents() {
+        $this->images = "assets/images";
+        $this->css = "assets/css";
+    }
+}
 
-// create an object
-$Lightning = new Car();
-
-// show object properties
-echo $Lightning->model;
-?>
+class AjaxContents {
+    function AjaxContents() {
+        $this->dom = ""; 
+        $this->site = "";   
+    }
+}
