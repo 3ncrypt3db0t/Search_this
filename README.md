@@ -131,10 +131,11 @@ http://localhost:8080/Search_this
 ## 🖼️ Screenshots and Visual Overview 🎥
 
 ### Home Page 
-![BoodleIndeX]()
+![BoodleIndeX](https://user-images.githubusercontent.com/48232101/120749360-32666d00-c524-11eb-8e33-8f86133fd10e.png)
+
 
 ### Site Search Page 
-![BoodleSearch]()
+![BoodleSearch](https://user-images.githubusercontent.com/48232101/120749418-4ad68780-c524-11eb-8b08-290fd95c9d1d.png)
 
 ### Image Search Page 
 * Will be updated soon 
