@@ -13,7 +13,7 @@ int main () {
    ico = images/icons;
    style = css;
    ecma = js;
-   int ret;
+   int ret; 
  
    /* calling a function to get max value */
    ret = max(img, ico, style, ecma);
