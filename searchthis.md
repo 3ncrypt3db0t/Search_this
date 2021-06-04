@@ -22,6 +22,7 @@ class ClassContents {
 class AssetsContents {
     function AssetsContents() {
         $this->images = "assets/images";
+        $this->icons = "assets/images/icons";
         $this->css = "assets/css";
     }
 }
@@ -32,3 +33,5 @@ class AjaxContents {
         $this->site = "";   
     }
 }
+
+?>
