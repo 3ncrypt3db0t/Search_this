@@ -109,14 +109,18 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 
 		<div class="paginationContainer">
-		
-			<div class="pageButtons">
-					<img src="assets/images/pageStart.png">
-				</div>
 
 			<div class="pageButtons">
-					<img src="assets/images/pageEnd.png">
-				</div>
+		
+				<div class="pageNumberContainer">
+						<img src="assets/images/pageStart.png">
+					</div>
+
+				<div class="pageNumberContainer">
+						<img src="assets/images/pageEnd.png">
+					</div>
+					
+			</div>
 		
 		</div>
 
