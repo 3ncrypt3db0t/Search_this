@@ -1,4 +1,4 @@
-![Search_This](https://user-images.githubusercontent.com/48232101/113574289-7c71c600-963b-11eb-8024-c658b3c899e0.gif)
+![BoodlE]()
 
 <h1 align="center"> 🔍 Search This: A simple search engine 🔎 </h1>
 
@@ -59,27 +59,6 @@ echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium mai
 
 ***** Update then install vscodium ***** 
 sudo apt update && sudo apt install codium
-```
-
-#### VS Codium installation on Linux (RPM based distributions):
-```
-***** Add the GPG key of the repository *****
-sudo rpm --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
-
-***** Add the repository ***** 
-##### Fedora/RHEL #####
-printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vscodium_repo\nbaseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg" |sudo tee -a /etc/yum.repos.d/vscodium.repo
-
-##### openSUSE/SUSE ##### 
-printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vscodium_repo\nbaseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg" |sudo tee -a /etc/zypp/repos.d/vscodium.repo
-
-***** Install the software *****
-
-##### Fedora/RHEL #####
-sudo dnf install codium
-
-##### OpenSUSE/SUSE #####
-sudo zypper in codium
 ```
 
 ### Other Configurations
@@ -152,10 +131,10 @@ http://localhost:8080/Search_this
 ## 🖼️ Screenshots and Visual Overview 🎥
 
 ### Home Page 
-![index](https://user-images.githubusercontent.com/48232101/120006275-77f0da80-bff8-11eb-864e-ca55a27079d3.png)
+![BoodleIndeX]()
 
 ### Site Search Page 
-![search](https://user-images.githubusercontent.com/48232101/120006283-7aebcb00-bff8-11eb-93e8-31015ea3e9c2.png)
+![BoodleSearch]()
 
 ### Image Search Page 
 * Will be updated soon 
