@@ -35,7 +35,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 				<div class="logoContainer">
 					<a href="index.php">
-						<img src="assets/images/SearchThisLogo.png">
+						<img src="assets/images/boodleLogo.png">
 					</a>
 				</div>
 
@@ -119,7 +119,26 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 				<div class="pageNumberContainer">
 						<img src="assets/images/pageEnd.png">
 					</div>
-					
+
+				<?php
+
+				$currentPage = 1;
+				$pagesLeft = 10;
+
+				while($pagesLeft != 0) {
+
+					echo "<div class='pageNumberContainer'>
+							<img src='assets/images/page.png'>
+							<span class='pageNumber'>$currentPage</span>
+						</div>";
+
+					$currentPage++;
+					$pagesLeft--;
+
+				}
+
+				?>
+
 			</div>
 		
 		</div>
