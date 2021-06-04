@@ -1,4 +1,4 @@
-![BoodlE](https://user-images.githubusercontent.com/48232101/120748862-2f1eb180-c523-11eb-87b1-2aeb475a1386.gif)
+![BOODLE](https://user-images.githubusercontent.com/48232101/120790802-1f1ec600-c553-11eb-80cb-c1d8c74e67ff.gif)
 
 <h1 align="center"> 🔍 BoodlE: A simple search engine 🔎 </h1>
 
