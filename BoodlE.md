@@ -1,6 +1,6 @@
 ```php
 <?php
-$greetingMessage = "Welcome to Search_This";
+$greetingMessage = "Welcome to BoodlE";
 $projectYear = 2021;
 
 class PageContents {
