@@ -93,7 +93,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 			<?php
 			$resultsProvider = new SiteResultsProvider($con);
-			$pageLimit = 20;
+			$pageLimit = 10;
 
 			$numResults = $resultsProvider->getNumResults($term);
 
