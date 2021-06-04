@@ -12,11 +12,10 @@ int main () {
    dom = DomDocumentParser;
    img = ImageResult;
    site = SiteResult;
-   vid = VideoResult;
    int ret;
  
    /* calling a function to get max value */
-   ret = max(dom, img, site, vid);
+   ret = max(dom, img, site);
  
    printf( "Assets Content", ret );
  
