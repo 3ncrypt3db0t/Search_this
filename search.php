@@ -18,8 +18,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SearchThis | Minimal SE</title>
-	<link rel="icon" href="assets/images/icons/search.png">
+	<title>Welcome to Doodle</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
@@ -93,7 +92,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 			<?php
 			$resultsProvider = new SiteResultsProvider($con);
-			$pageLimit = 10;
+			$pageLimit = 20;
 
 			$numResults = $resultsProvider->getNumResults($term);
 
@@ -108,19 +107,19 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 		</div>
 
 
+
 		<div class="paginationContainer">
 
 			<div class="pageButtons">
-		
-				<div class="pageNumberContainer">
-						<img src="assets/images/pageStart.png">
-					</div>
+
+
 
 				<div class="pageNumberContainer">
-						<img src="assets/images/pageEnd.png">
-					</div>
+					<img src="assets/images/pageStart.png">
+				</div>
 
 				<?php
+
 
 				$currentPage = 1;
 				$pagesLeft = 10;
@@ -137,11 +136,28 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 				}
 
+
+
+
+
 				?>
 
+				<div class="pageNumberContainer">
+					<img src="assets/images/pageEnd.png">
+				</div>
+
+
+
 			</div>
-		
+
+
+
+
 		</div>
+
+
+
+
 
 
 
