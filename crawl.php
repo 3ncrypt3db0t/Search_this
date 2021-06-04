@@ -47,7 +47,7 @@ function insertImage($url, $src, $alt, $title) {
 
 function createLink($src, $url) {
 
-	$scheme = parse_url($url)["scheme"]; // SCHEME: ;http
+	$scheme = parse_url($url)["scheme"]; // SCHEME: http
 	$host = parse_url($url)["host"]; // HOST: www.bbc.com
 	
 	if(substr($src, 0, 2) == "//") {
@@ -133,7 +133,7 @@ function getDetails($url) {
 		if(!in_array($src, $alreadyFoundImages)) {
 			$alreadyFoundImages[] = $src;
 
-			echo "INSERT: " . insertImage($url, $src, $alt, $title);
+			insertImage($url, $src, $alt, $title);
 		}
 
 	}
@@ -181,6 +181,6 @@ function followLinks($url) {
 
 }
 
-$startUrl = "https://www.bbc.com";
+$startUrl = "http://www.bbc.com";
 followLinks($startUrl);
 ?>
