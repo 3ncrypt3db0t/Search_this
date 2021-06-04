@@ -18,7 +18,8 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Doodle</title>
+	<title>Welcome to Boodle</title>
+	<link rel="shortcut icon" href="assets/images/icons/search.png" type="image/x-icon">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
@@ -126,10 +127,21 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 				while($pagesLeft != 0) {
 
-					echo "<div class='pageNumberContainer'>
-							<img src='assets/images/page.png'>
+					if($currentPage == $page) {
+						echo "<div class='pageNumberContainer'>
+							<img src='assets/images/pageSelected.png'>
 							<span class='pageNumber'>$currentPage</span>
 						</div>";
+					} 
+					else {
+						echo "<div class='pageNumberContainer'>
+							<a href='search.php?term=$term&type=$type&page=$currentPage'>
+								<img src='assets/images/page.png'>
+								<span class='pageNumber'>$currentPage</span>
+							</a>
+						</div>";
+					}
+
 
 					$currentPage++;
 					$pagesLeft--;
