@@ -1,6 +1,6 @@
-![BoodlE]()
+![BoodlE](https://user-images.githubusercontent.com/48232101/120748862-2f1eb180-c523-11eb-87b1-2aeb475a1386.gif)
 
-<h1 align="center"> 🔍 Search This: A simple search engine 🔎 </h1>
+<h1 align="center"> 🔍 BoodlE: A simple search engine 🔎 </h1>
 
 ## ⚡ Key Features 
 * Image Search 
