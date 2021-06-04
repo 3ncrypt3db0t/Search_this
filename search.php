@@ -10,6 +10,7 @@ else {
 }
 
 $type = isset($_GET["type"]) ? $_GET["type"] : "sites";
+$page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 
 	
@@ -18,9 +19,9 @@ $type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 <html>
 <head>
 	<title>SearchThis | Minimal SE</title>
+	<link rel="icon" href="assets/images/icons/search.png">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<link rel="icon" href="assets/images/icons/search.png">
 
 </head>
 <body>
@@ -92,6 +93,7 @@ $type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 
 			<?php
 			$resultsProvider = new SiteResultsProvider($con);
+			$pageLimit = 20;
 
 			$numResults = $resultsProvider->getNumResults($term);
 
@@ -99,7 +101,7 @@ $type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 
 
 
-			echo $resultsProvider->getResultsHtml(1, 20, $term);
+			echo $resultsProvider->getResultsHtml($page, $pageLimit, $term);
 			?>
 
 
