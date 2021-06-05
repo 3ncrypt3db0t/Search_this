@@ -127,6 +127,10 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 				
 				$currentPage = $page -> floor($pagesToShow /2);
 
+				if($currentPage < 1) {
+					$currentPage = 1;
+				}
+
 				while($pagesLeft != 0) {
 
 					if($currentPage == $page) {
