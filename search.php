@@ -123,8 +123,9 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 				$pagesToShow = 10;
 				$numPages = ceil($numResults / $pageSize);
-				$currentPage = 1;
-				$pagesLeft = 10;
+				$pagesLeft = min($pagesToShow, $numPages);
+				
+				$currentPage = $page -> ($pagesToShow /2);
 
 				while($pagesLeft != 0) {
 
