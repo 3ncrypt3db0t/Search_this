@@ -47,7 +47,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 							<input class="searchBox" type="text" name="term" value="<?php echo $term; ?>">
 							<button class="searchButton">
-								<img src="assets/images/icons/glass.png">
+								<img src="assets/images/icons/search.png">
 							</button>
 						</div>
 
@@ -124,8 +124,8 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 				$pagesToShow = 10;
 				$numPages = ceil($numResults / $pageSize);
 				$pagesLeft = min($pagesToShow, $numPages);
-				
-				$currentPage = $page -> floor($pagesToShow /2);
+
+				$currentPage = $page - floor($pagesToShow / 2);
 
 				if($currentPage < 1) {
 					$currentPage = 1;
@@ -135,16 +135,16 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 					if($currentPage == $page) {
 						echo "<div class='pageNumberContainer'>
-							<img src='assets/images/pageSelected.png'>
-							<span class='pageNumber'>$currentPage</span>
-						</div>";
-					} 
+								<img src='assets/images/pageSelected.png'>
+								<span class='pageNumber'>$currentPage</span>
+							</div>";
+					}
 					else {
 						echo "<div class='pageNumberContainer'>
-							<a href='search.php?term=$term&type=$type&page=$currentPage'>
-								<img src='assets/images/page.png'>
-								<span class='pageNumber'>$currentPage</span>
-							</a>
+								<a href='search.php?term=$term&type=$type&page=$currentPage'>
+									<img src='assets/images/page.png'>
+									<span class='pageNumber'>$currentPage</span>
+								</a>
 						</div>";
 					}
 
