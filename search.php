@@ -124,7 +124,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 			}
 
 			if($currentPage + $pagesLeft > $numPages + 1) {
-				$currentPage = $numPages - $pagesLeft;
+				$currentPage = $numPages + 1 - $pagesLeft;
 			}
 
 			while($pagesLeft != 0 && $currentPage <= $numPages) {
