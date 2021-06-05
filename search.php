@@ -125,7 +125,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 				$numPages = ceil($numResults / $pageSize);
 				$pagesLeft = min($pagesToShow, $numPages);
 				
-				$currentPage = $page -> ($pagesToShow /2);
+				$currentPage = $page -> floor($pagesToShow /2);
 
 				while($pagesLeft != 0) {
 
