@@ -123,7 +123,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 				$currentPage = 1;
 			}
 
-			if($currentPage + $pagesLeft > $numPages) {
+			if($currentPage + $pagesLeft > $numPages + 1) {
 				$currentPage = $numPages - $pagesLeft;
 			}
 
