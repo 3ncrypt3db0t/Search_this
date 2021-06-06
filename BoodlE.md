@@ -24,6 +24,7 @@ class AssetsContents {
         $this->images = "assets/images";
         $this->icons = "assets/images/icons";
         $this->css = "assets/css";
+        $this->js = "assets/js";
     }
 }
 
