@@ -53,7 +53,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 						<input class="searchBox" type="text" name="term" value="<?php echo $term; ?>">
 						<button class="searchButton">
-							<img src="assets/images/icons/search.png">
+							<img src="assets/images/icons/glass.png">
 						</button>
 					</div>
 
