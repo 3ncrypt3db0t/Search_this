@@ -9,6 +9,8 @@ $(document).ready(function() {
             alert("data-linkId attribute not found");
         }
 
+        increaseLinkClicks(id, url);
+
         return false;
     });
 
