@@ -23,6 +23,12 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
+<script 
+	src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+	integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+	crossorigin="anonymous">
+</script>
+
 </head>
 <body>
 
@@ -176,6 +182,8 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 
 </div>
+
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>
