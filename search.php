@@ -21,6 +21,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 	<title>BoodlE | Simple SE</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="shortcut icon" href="assets/images/icons/search.png" type="image/x-icon">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
