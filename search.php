@@ -46,7 +46,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 					<form action="search.php" method="GET">
 
 						<div class="searchBarContainer">
-							<input type="hidden" name="type">
+							<input type="hidden" name="type" value="<?php echo $type; ?>">
 							<input class="searchBox" type="text" name="term" value="<?php echo $term; ?>">
 							<button class="searchButton">
 								<img src="assets/images/icons/glass.png">
